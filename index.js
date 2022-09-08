@@ -5,7 +5,7 @@ const server = http.createServer(app);
 const cors = require("cors");
 const ytdl = require("ytdl-core");
 
-const port = 5500;
+const port = process.env.PORT || 5500;
 
 // enabling CORS for some specific origins only.
 let corsOptions = {
