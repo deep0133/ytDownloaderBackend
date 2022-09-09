@@ -9,13 +9,13 @@ const port = process.env.PORT || 5500;
 
 // enabling CORS for some specific origins only.
 let corsOptions = {
-  origin : "*",
+  origin : "https://deep0133.github.io/youtubeVideoDownloader/Client",
   method: ["GET","POST"],
 
 }
 
 // config:
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // end points:
