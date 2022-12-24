@@ -9,7 +9,7 @@ const port = process.env.PORT || 5500;
 
 // enabling CORS for some specific origins only.
 let corsOptions = {
-  origin : 'https://deep0133.github.io/youtubeVideoDownloader/Client/',
+  origin : 'https://deep0133.github.io',
   method: ["GET","POST"],
   optionsSuccessStatus: 200,
 }
